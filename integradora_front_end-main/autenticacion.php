@@ -10,7 +10,7 @@
 <?php
 include 'data_base.php';
 session_start();
-
+// Si el usuario ya inició sesión, redirigirlo a la página de inicio
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['usuario'];
     $password = $_POST['contraseña'];
